@@ -1,11 +1,11 @@
 
 const data = [
-  { img: '/public/Img/img5.jpeg' },
-  { img: '/public/Img/img6.jpg' },
-  { img: '/public/Img/img7.png' },
-  { img: '/public/Img/img8.jpg' },
-  { img: '/public/Img/img7.png' },
-  { img: '/public/Img/img8.jpg' },
+  { img: '/Img/img5.jpeg' },
+  { img: '/Img/img6.jpg' },
+  { img: '/Img/img7.png' },
+  { img: '/Img/img8.jpg' },
+  { img: '/Img/img7.png' },
+  { img: '/Img/img8.jpg' },
 
 ];
 const Cards = () => {
