@@ -6,6 +6,10 @@ import ScrollToTop from './component/common/ScrollToTop'
 import Statistics from './component/Statistics'
 import GetInvolved from './component/GetInvolved'
 import Carddata from './component/Carddata'
+import LanguageSelector from './component/LanguageSelector'
+import Cards from './component/cards/cards'
+import GoCard from './component/gocard/goCard'
+import VideoPage from './component/videopage/videopage'
 
 const App = () => {
   return (
@@ -15,6 +19,7 @@ const App = () => {
       <Header />
       <Slider />
       <Statistics />
+      <Cards />
       <div
         className=" bg-no-repeat h-[calc(100%)]"
 
@@ -28,6 +33,9 @@ const App = () => {
         <GetInvolved />
         <Carddata />
       </div>
+      <GoCard />
+      <VideoPage />
+
       <div className='relative z-50'>
 
         <ScrollToTop />

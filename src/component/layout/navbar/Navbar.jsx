@@ -1,9 +1,13 @@
 import React from 'react';
-import Dropdown from '../../common/Dropdown';
+
 import { PersonStanding, UserPlus } from 'lucide-react';
-import LanguageDropdown from '../../common/LanguageDropdown';
+
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../../LanguageSelector';
 
 const Navbar = () => {
+    const { t } = useTranslation();
+
     const dropdownItems = [
         { label: 'Newsletter', href: '#' },
         { label: 'Purchases', href: '#' },
@@ -28,13 +32,15 @@ const Navbar = () => {
                     </div>
                     <div className='text-[12px]'>
 
-                        GOVERNMENT OF INDIA
+                        {t("title")}
                     </div>
+
+
 
                 </div>
                 <div className='flex  items-center space-x-4'>
                     <div className='text-[12px]'>
-                        Skip to main content
+                    {t("contant")}
                     </div>
                     {/* <div>
                         <LanguageDropdown />
@@ -51,6 +57,9 @@ const Navbar = () => {
 
                     <div>
                         <UserPlus />
+                    </div>
+                    <div>
+                        <LanguageSelector />
                     </div>
                 </div>
 

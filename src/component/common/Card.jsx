@@ -5,7 +5,7 @@ const Card = ({ image, title, content, buttonText }) => {
 
     return (
         <div
-            className="mb-96 w-full max-w-sm  relative"
+            className="w-full max-w-sm  relative"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
