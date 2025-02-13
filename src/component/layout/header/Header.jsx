@@ -7,7 +7,7 @@ const Header = () => {
 
 
     const abouttalasari = [
-        { label: `${t("History")}`, href: '#' },
+        { label: `${t("History")}`, href: '/aboutus' },
 
         { label: `${t("GeographicalInformation")}`, href: '#' },
         {
@@ -24,7 +24,7 @@ const Header = () => {
     ];
     const Directory = [
         { label: `${t("DisasterManagement")}`, href: '#' },
-        { label: `${t("Helpline")}`, href: '#' },
+        { label: `${t("Helpline")}`, href: '/contact' },
         { label: `${t("ImportantTelephoneNumbers")}`, href: '#' },
         { label: `${t("STDPINCodes")}`, href: '#' },
         { label: `${t("PublicUtilities")}`, href: '#' },
@@ -66,26 +66,26 @@ const Header = () => {
     const Ulbdata = [
         {
             label: `${t("ULBDetial1")}`, submenu: [
-                { label: `${t("ULBDetial4")}`, href: "/pdf/RTS 2015 - Talasari Nagarpanchayat.pdf",target:"_blank" },
+                { label: `${t("ULBDetial4")}`, href: "/pdf/RTS 2015 - Talasari Nagarpanchayat.pdf", target: "_blank" },
             ],
         },
         {
             label: `${t("ULBDetial2")}`, submenu: [
-                { label: `${t("ULBDetial5")}`, href: "/pdf/__New Doc 11-14-2024 18_1737543368864_1737549012940.49 (3) (1).pdf",target:"_blank" },
-                { label: `${t("ULBDetial6")}`, href: "/pdf/_समिती आदेश_1737543281169 (5).pdf",target:"_blank" },
+                { label: `${t("ULBDetial5")}`, href: "/pdf/__New Doc 11-14-2024 18_1737543368864_1737549012940.49 (3) (1).pdf", target: "_blank" },
+                { label: `${t("ULBDetial6")}`, href: "/pdf/_समिती आदेश_1737543281169 (5).pdf", target: "_blank" },
             ],
 
 
         },
         {
             label: `${t("ULBDetial3")}`, submenu: [
-                { label: `${t("ULBDetial7")}`, href: "/pdf/कार्यालयीन आदेश..pdf",target:"_blank" },
+                { label: `${t("ULBDetial7")}`, href: "/pdf/कार्यालयीन आदेश..pdf", target: "_blank" },
 
             ],
         },
         {
             label: `${t("ULBDetial9")}`, submenu: [
-                { label: `${t("ULBDetial10")}`, href: "/pdf/माहिती अधिकार अधिनियम.pdf",target:"_blank" },
+                { label: `${t("ULBDetial10")}`, href: "/pdf/माहिती अधिकार अधिनियम.pdf", target: "_blank" },
 
             ],
         },

@@ -48,16 +48,16 @@ const VideoPage = () => {
         </div>
 
         {/* Video Description */}
-        <h3 className="mt-3 text-lg font-semibold">
-          TEASER: Pariksha Pe Charcha 2025 – PM Modi’s exam hacks you can’t miss!
+        <h3 className="mt-3 text-lg font-semibold uppercase">
+          udghatan samaroh
         </h3>
 
         <div className="flex justify-between">
 
           {/* Channel Info */}
           <div className="flex items-center gap-2 mt-2">
-            <img src="/Img/mygov-logo.png" alt="MyGov" className="w-12" />
-            <span className="text-gray-700">MyGov India</span>
+            <img src="/Img/talasari logo.jpg" alt="MyGov" className="w-12" />
+            <span className="text-gray-700"></span>
           </div>
 
           {/* Buttons */}

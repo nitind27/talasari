@@ -10,6 +10,9 @@ import LanguageSelector from './component/LanguageSelector'
 import Cards from './component/cards/cards'
 import GoCard from './component/gocard/goCard'
 import VideoPage from './component/videopage/videopage'
+import Footer from './component/layout/footer/Footer'
+import Contact from './component/Contact/Contact'
+import AboutUs from './component/About/About'
 
 const App = () => {
   return (
@@ -40,7 +43,9 @@ const App = () => {
 
         <ScrollToTop />
       </div>
-
+      {/* <AboutUs /> */}
+      <Contact />
+      <Footer />
     </div>
   )
 }
