@@ -16,7 +16,7 @@ const Dropdown = ({ label, items }) => {
             {/* Main Button */}
             <button
                 type="button"
-                className="inline-flex items-center uppercase gap-x-1.5 text-sm font-semibold text-gray-900"
+                className="inline-flex items-center uppercase gap-x-2 text-sm  text-gray-900"
                 id="menu-button"
                 aria-expanded={isOpen}
                 aria-haspopup="true"
@@ -33,7 +33,7 @@ const Dropdown = ({ label, items }) => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg"
+                        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg "
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="menu-button"
@@ -84,13 +84,14 @@ const DropdownItem = ({ item }) => {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -10 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
-                            className="absolute left-full top-0 mt-0 w-48 rounded-md bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            className="absolute right-full top-0 mt-0 w-56 rounded-md bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                         >
                             <div className="py-1">
                                 {item.submenu.map((subItem, subIndex) => (
                                     <a
                                         key={subIndex}
                                         href={subItem.href}
+                                        target={subItem.target}
                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
                                     >
                                         {subItem.label}

@@ -63,6 +63,36 @@ const Header = () => {
 
 
     ];
+    const Ulbdata = [
+        {
+            label: `${t("ULBDetial1")}`, submenu: [
+                { label: `${t("ULBDetial4")}`, href: "/pdf/RTS 2015 - Talasari Nagarpanchayat.pdf",target:"_blank" },
+            ],
+        },
+        {
+            label: `${t("ULBDetial2")}`, submenu: [
+                { label: `${t("ULBDetial5")}`, href: "/pdf/__New Doc 11-14-2024 18_1737543368864_1737549012940.49 (3) (1).pdf",target:"_blank" },
+                { label: `${t("ULBDetial6")}`, href: "/pdf/_समिती आदेश_1737543281169 (5).pdf",target:"_blank" },
+            ],
+
+
+        },
+        {
+            label: `${t("ULBDetial3")}`, submenu: [
+                { label: `${t("ULBDetial7")}`, href: "/pdf/कार्यालयीन आदेश..pdf",target:"_blank" },
+
+            ],
+        },
+        {
+            label: `${t("ULBDetial9")}`, submenu: [
+                { label: `${t("ULBDetial10")}`, href: "/pdf/माहिती अधिकार अधिनियम.pdf",target:"_blank" },
+
+            ],
+        },
+
+
+
+    ];
 
     return (
         <div className='flex items-center justify-between p-2'>
@@ -89,10 +119,13 @@ const Header = () => {
                 <div>
                     <Dropdown label={t("Tourism")} items={Tourism} />
                 </div>
+                <div>
+                    <Dropdown label={t('ULBData')} items={Ulbdata} />
+                </div>
 
-                <div className='text-sm font-semibold text-gray-900 uppercase'>
-                    {/* <Dropdown label="Forms" items={Forms} /> */}
-                    {t('Forms')}
+                <div className=''>
+                    <Dropdown label={t("Forms")} items={[]} />
+                    {/* Home */}
                 </div>
                 <div>
                     <Dropdown label={t('Notices')} items={Notices} />
@@ -104,6 +137,7 @@ const Header = () => {
                 <div>
                     <Dropdown label={t('More')} items={More} />
                 </div>
+
 
 
                 <div>
